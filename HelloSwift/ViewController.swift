@@ -71,7 +71,8 @@ class ViewController: UIViewController {
                 total = 0;
         }
         
-        resultLabel.text = NSString(format: "%.2f", total);
+        resultLabel.textColor = total < 0 ? UIColor.redColor() : UIColor.blackColor();
+        resultLabel.text = NSString(format: "%.2f", total); 
     }
 }
 
