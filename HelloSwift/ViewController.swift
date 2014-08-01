@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
                             
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         setUpUserInterface();
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var operatorButton: UISegmentedControl!
     @IBOutlet weak var resultLabel: UILabel!
     
-    private func setUpUserInterface()
+    private func setUpUserInterface() -> Void
     {
         sliderOne.minimumValue = 0;
         sliderOne.maximumValue = 100;
@@ -37,13 +38,15 @@ class ViewController: UIViewController {
     
     @IBAction func sliderOneChange(sender: AnyObject)
     {
-        labelOne.text = NSString(format: "%.2f", sliderOne.value);
+        //labelOne.text = NSString(format: "%.2f", sliderOne.value);
+        labelOne.text = sliderOne.value.format(decimalPlaces: 2);
         updateTotal();
     }
     
     @IBAction func sliderTwoChange(sender: AnyObject)
     {
-        labelTwo.text = NSString(format: "%.2f", sliderTwo.value);
+        //labelTwo.text = NSString(format: "%.2f", sliderTwo.value);
+        labelTwo.text = sliderTwo.value.format(decimalPlaces: 2);
         updateTotal();
     }
     
@@ -72,7 +75,7 @@ class ViewController: UIViewController {
         }
         
         resultLabel.textColor = total < 0 ? UIColor.redColor() : UIColor.blackColor();
-        resultLabel.text = NSString(format: "%.2f", total); 
+        resultLabel.text = total.format(decimalPlaces: 4);
     }
 }
 

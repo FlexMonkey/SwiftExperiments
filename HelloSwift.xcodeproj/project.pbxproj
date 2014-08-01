@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0E5C58198C080100395741 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0E5C57198C080100395741 /* File.swift */; };
 		BE257DA619837A65002E26E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE257DA519837A65002E26E9 /* AppDelegate.swift */; };
 		BE257DA819837A65002E26E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE257DA719837A65002E26E9 /* ViewController.swift */; };
 		BE257DAB19837A65002E26E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE257DA919837A65002E26E9 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE0E5C57198C080100395741 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		BE257DA019837A65002E26E9 /* HelloSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE257DA419837A65002E26E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE257DA519837A65002E26E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				BE257DA919837A65002E26E9 /* Main.storyboard */,
 				BE257DAC19837A65002E26E9 /* Images.xcassets */,
 				BE257DA319837A65002E26E9 /* Supporting Files */,
+				BE0E5C57198C080100395741 /* File.swift */,
 			);
 			path = HelloSwift;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE257DA819837A65002E26E9 /* ViewController.swift in Sources */,
+				BE0E5C58198C080100395741 /* File.swift in Sources */,
 				BE257DA619837A65002E26E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +405,7 @@
 				BE257DBE19837A65002E26E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE257DBF19837A65002E26E9 /* Build configuration list for PBXNativeTarget "HelloSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +414,7 @@
 				BE257DC119837A65002E26E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
