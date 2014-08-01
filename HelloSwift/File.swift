@@ -12,6 +12,6 @@ extension Float
 {
     func format(#decimalPlaces : Int) -> String
     {
-        return NSString(format: "%." + String(decimalPlaces) + "f", self);
+        return NSString(format: "%.\(decimalPlaces)f", self);
     }
 }
